@@ -1,9 +1,7 @@
 'use server';
 
-import { cookies } from 'next/headers';
+import { getServerSession } from 'next-auth/next';
 
-export default async function ServerExample(message: string) {
-  cookies().get('anything');
-
-  return 'hey';
+export default async function ServerExample2(message: string) {
+  return await getServerSession({});
 }
