@@ -1,7 +1,7 @@
 'use client';
 
 interface Props {
-  action: (message: string) => Promise<string>;
+  action: (message: string) => Promise<any>;
 }
 
 export default function ClientExampleEmbeddedServer(props: Props) {
